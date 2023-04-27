@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .product .hero .caption,
+        .product .hero .image {
+            width: calc(50% - 10px);
+        }
+
+        .product .hero .image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .product .benefit .list .item {
+            width: calc(20% - 56px);
+        }
+
+        #card .account .caption {
+            width: 30%;
+        }
+
+        #card .account .type {
+            width: calc(70% - 20px);
+        }
+
+        #card .account .type .item {
+            width: calc(33.3% - 56px);
+            border-radius: 40px;
+        }
+
+        #app.product .benefit .list .item {
+            width: calc(25% - 56px);
+        }
+
+        @media (max-width: 992px) {
+            #card .account .caption,
+            #card .account .type {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            .product .benefit .list .item,
+            #app.product .benefit .list .item {
+                width: calc(50% - 50px);
+            }
+        }
+
+        @media (max-width: 767px) {
+            .product .hero .caption, 
+            .product .hero .image,
+            .product .benefit .list .item,
+            #card .account .type .item,
+            #app.product .benefit .list .item {
+                width: 100%;
+            }
+
+            .product .hero .image {
+                order: 1;
+            }
+
+            .product .hero .caption {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- START NAVBAR -->
+    <nav class="flex items-center justify-between px-40 py-20">
+        <a href="index.html">
+            <img src="./assets/images/kashplus-logo.webp" alt="KA$Hplus Logo" width="150" height="42">
+        </a>
+
+        <ul class="flex flex-wrap items-center col-gap-20 row-gap-16">
+            <li>
+                <a href="https://weborder.kashplus.my/?channel_id=kashplus_web_header"
+                    class="order-card inline-block px-16 py-16 bg-primary-main decoration-none text-neutral-100 font-600 rounded-80 text-center">Order
+                    Card</a>
+            </li>
+
+            <li>
+                <a href="index.html" class="decoration-none text-neutral-100">Home</a>
+            </li>
+
+            <li>
+                <a href="about-us.html" class="decoration-none text-neutral-100">About Us</a>
+            </li>
+
+            <li>
+                <a href="product.html" class="decoration-none text-neutral-100">Products</a>
+            </li>
+
+            <li>
+                <a href="lifestyle.html" class="decoration-none text-neutral-100">Lifestyle</a>
+            </li>
+
+            <li>
+                <a href="contact-us.html" class="decoration-none text-neutral-100">Support</a>
+            </li>
+        </ul>
+
+        <button class="menu">
+            <img src="./assets/images/icons/menu.svg" alt="Menu Icon" width="24" height="24">
+        </button>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START CARD-->
+    <section id="card" class="product px-40 py-40 bg-primary-main">
+        <div class="hero flex flex-wrap items-center col-gap-20 row-gap-16">
+            <div class="caption">
+                <h1 class="font-700 text-4xl">KA$Hplus Visa Prepaid Card</h1>
+                <p class="mt-16 text-xl">
+                    Pay more easy, fast, and secure with KA$Hplus Visa Prepaid Card.
+
+                    <br/>
+
+                    Pay using KA$Hplus Visa Prepaid Card anywhere anytime 
+                </p>
+
+                <a href="https://weborder.kashplus.my/?channel_id=kashplus_web_header" class="inline-block bg-secondary-main text-neutral-10 font-600 decoration-none px-20 py-12 rounded-80 mt-16 text-lg">Apply Now</a>
+            </div>
+
+            <div class="image">
+                <img src="./assets/images/card.webp" alt="KA$Hplus Visa Prepaid Card" width="708" height="598">
+            </div>
+        </div>
+
+        <div class="benefit mt-80">
+            <h2 class="font-700 text-2xl text-center">One Card For All Conveniences</h2>
+
+            <div class="mt-16 list flex flex-wrap col-gap-20 row-gap-16">
+                <div class="item bg-primary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/globe.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg">Worldwide Recognitions</h3>
+
+                    <p class="mt-8">Eliminate worry anywhere. Because KA$H Plus can be used all over the world</p>
+                </div>
+
+                <div class="item bg-primary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/secure.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg">Secured Online Purchase</h3>
+
+                    <p class="mt-8">Always worried about your online transactions? By using the KA$Hplus Visa Prepaid Card, we will protect your transactions so that no one will take your card identity</p>
+                </div>
+
+                <div class="item bg-primary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/cash.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg">Cash Withdrawal</h3>
+
+                    <p class="mt-8">With personalized branding, make your card more special by using your own brand</p>
+                </div>
+
+                <div class="item bg-primary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/card-spending.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg">Card Spending</h3>
+
+                    <p class="mt-8">Pay all with one card. One KA$Hplus card to pay faster, easier and safer</p>
+                </div>
+
+                <div class="item bg-primary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/pin-pay.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg">Pin & Pay</h3>
+
+                    <p class="mt-8">Pin for your payment security. Enter a pin before payment to prevent everyone from being able to transact</p>
+                </div>
+
+                <div class="item bg-primary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/branding.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg">Personalized Branding</h3>
+
+                    <p class="mt-8">With personalized branding, make your card more special by using your own brand</p>
+                </div>
+
+                <div class="item bg-primary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/pay-wave.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg">Pay Wave</h3>
+
+                    <p class="mt-8">No need to swipe card or input pin again. With Pay Wave feature, you just need to wave your card with the machine and the payment will be done easy and fast</p>
+                </div>
+
+                <div class="item bg-primary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/user.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg">RFID Attendance Access</h3>
+
+                    <p class="mt-8">KA$Hplus Visa Prepaid Card can be useful for Attendance Access.</p>
+                </div>
+
+                <div class="item bg-primary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/card-spending.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg">Apply Card Up To 10 Card Per Account</h3>
+
+                    <p class="mt-8">You can order up to 10 card per account so you can buy the card for your family and friends</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="account mt-80 flex flex-wrap col-gap-20 row-gap-16 items-center">
+            <div class="caption">
+                <h2 class="text-xl font-700">Choose Your Account</h2>
+                <p class="mt-8 text-lg">KA$Hplus Visa Prepaid Card offers you 3 type of accounts based on your need</p>
+            </div>
+
+            <div class="type flex flex-wrap col-gap-20 row-gap-16">
+                <div class="item bg-primary-surface px-20 py-20">
+                    <div class="flex col-gap-8 justify-center items-center">
+                        <img src="./assets/images/icons/star.svg" alt="star" width="48" height="48">
+
+                        <img src="./assets/images/icons/star.svg" alt="star" width="48" height="48">
+
+                        <img src="./assets/images/icons/star.svg" alt="star" width="48" height="48">
+                    </div>
+
+                    <h3 class="mt-16 font-700 text-xl text-center">Premium</h3>
+
+                    <div class="mt-20 flex flex-col row-gap-16">
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/check.svg" alt="icon" width="24" height="24">
+
+                            <p>Wallet Balance Limit RM10,000</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/check.svg" alt="icon" width="24" height="24">
+
+                            <p>Withdraw flexibility from e-wallet to bank account</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/check.svg" alt="icon" width="24" height="24">
+
+                            <p>Get KA$Hplus physical card</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/check.svg" alt="icon" width="24" height="24">
+
+                            <p>Track you expenses</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/check.svg" alt="icon" width="24" height="24">
+
+                            <p>Enable for multiple wallet accounts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item border-2-solid border-primary-surface px-20 py-20">
+                    <div class="flex col-gap-8 justify-center items-center">
+                        <img src="./assets/images/icons/star.svg" alt="star" width="48" height="48">
+
+                        <img src="./assets/images/icons/star.svg" alt="star" width="48" height="48">
+                    </div>
+
+                    <h3 class="mt-16 font-700 text-xl text-center">Advance</h3>
+
+                    <div class="mt-20 flex flex-col row-gap-16">
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/check.svg" alt="icon" width="24" height="24">
+
+                            <p>Wallet Balance Limit RM10,000</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/check.svg" alt="icon" width="24" height="24">
+
+                            <p>Withdraw flexibility from e-wallet to bank account</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/check.svg" alt="icon" width="24" height="24">
+
+                            <p>Get KA$Hplus physical card</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/x.svg" alt="icon" width="24" height="24">
+
+                            <p>Track you expenses</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/x.svg" alt="icon" width="24" height="24">
+
+                            <p>Enable for multiple wallet accounts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item border-2-solid border-primary-surface px-20 py-20">
+                    <div class="flex col-gap-8 justify-center items-center">
+                        <img src="./assets/images/icons/star.svg" alt="star" width="48" height="48">
+                    </div>
+
+                    <h3 class="mt-16 font-700 text-xl text-center">Basic</h3>
+
+                    <div class="mt-20 flex flex-col row-gap-16">
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/check.svg" alt="icon" width="24" height="24">
+
+                            <p>Wallet Balance Limit RM10,000</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/x.svg" alt="icon" width="24" height="24">
+
+                            <p>Withdraw flexibility from e-wallet to bank account</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/x.svg" alt="icon" width="24" height="24">
+
+                            <p>Get KA$Hplus physical card</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/x.svg" alt="icon" width="24" height="24">
+
+                            <p>Track you expenses</p>
+                        </div>
+
+                        <div class="flex col-gap-8">
+                            <img src="./assets/images/icons/x.svg" alt="icon" width="24" height="24">
+
+                            <p>Enable for multiple wallet accounts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CARD-->
+
+    <!-- START APP-->
+    <section id="app" class="product px-40 py-40 bg-secondary-main text-neutral-10">
+        <div class="hero flex flex-wrap items-center col-gap-20 row-gap-16">
+            <div class="caption">
+                <h1 class="font-700 text-4xl">KA$Hplus App</h1>
+                <p class="mt-16 text-xl">
+                    One app for convenience payment solutions
+                </p>
+
+                <div class="mt-16">
+                    <p class="text-xl font-700 text-primary-main">Download Now</p>
+
+                    <div class="flex flex-wrap col-gap-20 row-gap-16 mt-16">
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.fasspay.biz.wallet.vfsb&hl=en_US&gl=US">
+                            <img src="./assets/images/play-store.webp" alt="Google Play Store" width="136" height="40">
+                        </a>
+
+                        <a href="https://apps.apple.com/us/app/kashplus/id1591333903">
+                            <img src="./assets/images/app-store.webp" alt="Apple Store" width="120" height="40">
+                        </a>
+
+                        <a href="https://appgallery.huawei.com/app/C105993177">
+                            <img src="./assets/images/huawei.webp" alt="Huawei" width="132" height="40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./assets/images/app.webp" alt="KA$Hplus App" width="708" height="598">
+            </div>
+        </div>
+
+        <div class="benefit mt-80">
+            <h2 class="font-700 text-2xl text-center">One App For Everything You Need</h2>
+
+            <div class="mt-16 list flex flex-wrap col-gap-20 row-gap-16">
+                <div class="item bg-secondary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/wallet.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg text-neutral-100">Mobile Banking</h3>
+
+                    <p class="mt-8 text-neutral-90">Receive, transfer money in one app. KA$Hplus same like mobile banking. You can check your balance, send money, and receive money</p>
+                </div>
+
+                <div class="item bg-secondary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/phone.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg text-neutral-100">Mobile Banking Registration</h3>
+
+                    <p class="mt-8 text-neutral-90">It’s very easy to register KA$Hplus. You just only need to download KA$Hplus app and then sign up</p>
+                </div>
+
+                <div class="item bg-secondary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/branding.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg text-neutral-100">Cardholder Benefits</h3>
+
+                    <p class="mt-8 text-neutral-90">Get many benefits for your life when use KA$Hplus app</p>
+                </div>
+
+                <div class="item bg-secondary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/bill.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg text-neutral-100">Bill Payment</h3>
+
+                    <p class="mt-8 text-neutral-90">Pay your electricity, water, internet, and other bills with KA$Hplus</p>
+                </div>
+
+                <div class="item bg-secondary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/card-spending.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg text-neutral-100">Card Order</h3>
+
+                    <p class="mt-8 text-neutral-90">
+                        Order KA$Hplus Visa Prepaid Card from KA$Hplus app for only 
+
+                        <br/>
+                        <br/>
+
+                        <span class="text-sm">*All payment for order card cannot be refundable</span>
+                    </p>
+                </div>
+
+                <div class="item bg-secondary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/service.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg text-neutral-100">E-Services</h3>
+
+                    <p class="mt-8 text-neutral-90">Always worried about your online transactions? By using the KA$Hplus Visa Prepaid Card, we will protect your transactions so that no one will take your card identity</p>
+                </div>
+
+                <div class="item bg-secondary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/qr.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg text-neutral-100">QR Pay & Fund Transfer</h3>
+
+                    <p class="mt-8 text-neutral-90">KA$Hplus Visa Prepaid Card can be useful for Attendance Access.</p>
+                </div>
+
+                <div class="item bg-secondary-surface px-20 py-20 rounded-8">
+                    <img src="./assets/images/icons/user.svg" alt="Icon" width="48" height="48">
+
+                    <h3 class="mt-8 font-700 text-lg text-neutral-100">E-Community</h3>
+
+                    <p class="mt-8 text-neutral-90">Digitalize your community with KA$Hplus. Share your community events, invite your community to use KA$Hplus, and many more</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END APP-->
+
+    <!-- START FOOTER -->
+    <footer class="bg-secondary-main px-40 py-40 text-neutral-10">
+        <div class="list flex flex-wrap col-gap-20 row-gap-16">
+            <div class="item">
+                <a href="index.html">
+                    <img src="./assets/images/logo-gold.webp" alt="KA$Hplus Logo" width="95" height="25">
+                </a>
+
+                <div class="mt-16 flex col-gap-20">
+                    <a href="https://www.facebook.com/kashplusmyofficial" aria-label="Facebook">
+                        <img src="./assets/images/icons/facebook-gold.svg" alt="Facebook" width="24" height="24">
+                    </a>
+
+                    <a href="https://www.instagram.com/kashplus.my/" aria-label="Instagram">
+                        <img src="./assets/images/icons/ig-gold.svg" alt="Instagram" width="24" height="24">
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UC6cmbsnDnoXpuXkqfDrKEjg" aria-label="Youtube">
+                        <img src="./assets/images/icons/youtube-gold.svg" alt="Youtube" width="24" height="24">
+                    </a>
+                </div>
+
+                <p class="mt-8">
+                    Mon-Fri
+                    <br />
+                    (Weekend & Public Holiday Close)
+                    <br />
+                    09:00 AM - 05:00 PM
+                </p>
+                <div class="flex items-center col-gap-8 mt-8">
+                    <img src="./assets/images/icons/phone-icon.svg" alt="Phone" width="24" height="24">
+
+                    <a href="tel:+60384082118" class="decoration-none text-neutral-10">+60384082118</a>
+                </div>
+
+                <div class="flex items-center col-gap-8 mt-8">
+                    <img src="./assets/images/icons/email.svg" alt="Phone" width="24" height="24">
+
+                    <a href="mailto:pluscare@kash.my" class="decoration-none text-neutral-10">pluscare@kash.my</a>
+                </div>
+
+            </div>
+
+            <div class="item">
+                <p class="font-700">Company</p>
+
+                <div class="mt-12 flex flex-col row-gap-12">
+                    <a href="about-us.html">About</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms and Conditions</a>
+                    <a href="./assets/files/PDPN-BNM.pdf">Personal Data Protection Notice</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <p class="font-700">Product</p>
+
+                <div class="mt-12 flex flex-col row-gap-12">
+                    <a href="product.html#card">KA$Hplus Visa Card</a>
+                    <a href="product.html#app">KA$Hplus App</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <p class="font-700">Support</p>
+
+                <div class="mt-12 flex flex-col row-gap-12">
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="guide.html#register">Registration Guide</a>
+                    <a href="guide.html#feature">Feature & Function Guide</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <p class="font-700">Download KA$Hplus</p>
+
+                <div class="mt-12 flex flex-col row-gap-12">
+                    <a href="https://play.google.com/store/apps/details?id=com.fasspay.biz.wallet.vfsb&hl=en_US&gl=US">
+                        <img src="./assets/images/play-store.webp" alt="Google Play Store" width="130" height="40">
+                    </a>
+
+                    <a href="https://apps.apple.com/us/app/kashplus/id1591333903">
+                        <img src="./assets/images/app-store.webp" alt="Apple App Store" width="118" height="40">
+                    </a>
+
+                    <a href="https://appgallery.huawei.com/app/C105993177">
+                        <img src="./assets/images/huawei.webp" alt="Huawei" width="130" height="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-sm text-center mt-20">All rights reserved Virtualflex Sdn Bhd 2023</p>
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>
