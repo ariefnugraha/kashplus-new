@@ -1,13 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KA$Hplus</title>
+    <link rel="stylesheet" href="./assets/css/swiper-js.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .product .card,
+        .product .app {
+            width: calc(50% - 50px);
+        }
+
+        .product .app .download-app {
+            width: 160px;
+        }
+
+        .feature .list .item {
+            width: calc(33.3% - 20px);
+        }
+
+        .feature .list .item .line {
+            height: auto;
+        }
+
+        .apply .step,
+        .apply .image {
+            width: calc(50% - 20px);
+        }
+
+        .apply .step .item {
+            cursor: pointer;
+        }
+
+        .apply .step .item.active,
+        .apply .step .item:hover {
+            background: #E8C95E;
+            transition: .5s;
+        }
+
+        .apply .step .item .button {
+            background: #1A2837;
+            color: #fff;
+        }
+
+        .requirement .item {
+            width: calc(33.3% - 13px);
+        }
+
+        .requirement .number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .download {
+            display: flex;
+            align-items: center;
+            background: url('./assets/images/backgrounds/bg-download.webp') no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 600px;
+        }
+
+        .download .caption {
+            max-width: 600px;
+        }
+
+        @media (max-width: 992px) {
+
+            .product .card,
+            .product .app {
+                width: 100%;
+            }
+
+            .product img {
+                width: 100%;
+                height: auto;
+            }
+
+            .download {
+                padding: 20px;
+            }
+
+            .download .caption {
+                width: 100%;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            .feature .list .item {
+                width: calc(50% - 10px);
+            }
+
+            .apply .image .item img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .product a {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            .feature .list .item,
+            .requirement .item {
+                width: 100%;
+            }
+
+            .apply .step {
+                width: 100%;
+            }
+
+            .apply .image {
+                display: none;
+            }
+
+            .apply .step .item {
+                background: #E8C95E;
+            }
+
+            .partner img {
+                width: auto;
+                height: 36px;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <!-- START NAVBAR -->
+    <nav class="flex items-center justify-between px-40 py-20">
+        <a href="index.html">
+            <img src="./assets/images/kashplus-logo.webp" alt="KA$Hplus Logo" width="150" height="42">
+        </a>
+
+        <ul class="flex flex-wrap items-center col-gap-20 row-gap-16">
+            <li>
+                <a href="https://weborder.kashplus.my/?channel_id=kashplus_web_header"
+                    class="order-card inline-block px-16 py-16 bg-primary-main decoration-none text-neutral-100 font-600 rounded-80 text-center">Order
+                    Card</a>
+            </li>
+
+            <li>
+                <a href="index.html" class="decoration-none text-neutral-100">Home</a>
+            </li>
+
+            <li>
+                <a href="about-us.html" class="decoration-none text-neutral-100">About Us</a>
+            </li>
+
+            <li>
+                <a href="product.html" class="decoration-none text-neutral-100">Products</a>
+            </li>
+
+            <li>
+                <a href="lifestyle.html" class="decoration-none text-neutral-100">Lifestyle</a>
+            </li>
+
+            <li>
+                <a href="contact-us.html" class="decoration-none text-neutral-100">Support</a>
+            </li>
+        </ul>
+
+        <button class="menu">
+            <img src="./assets/images/icons/menu.svg" alt="Menu Icon" width="24" height="24">
+        </button>
+    </nav>
     <!-- END NAVBAR -->
+
+    <!-- START CAROUSEL -->
+    <section class="carousel px-40 mt-80">
+        <div class="col-gap-20">
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper">
+                <div class="swiper-slide">
+                    <a href="product.html">
+                        <img src="./assets/images/carousel-1.webp" alt="Go Cashless With KA$Hplus" width="1200"
+                            height="448">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="product.html#app">
+                        <img src="./assets/images/carousel-2.webp"
+                            alt="The Ultimate Digital Wallet For Your Everyday Transactions" width="1200" height="448">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="product.html#card">
+                        <img src="./assets/images/carousel-3.webp" alt="KA$Hplus Visa Prepaid Card" width="1200"
+                            height="448">
+                    </a>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="swiper-pagination mt-16"></div>
+    </section>
+    <!-- END CAROUSEL -->
+
+    <!-- START PRODUCT-->
+    <section class="product flex flex-wrap col-gap-20 row-gap-16 px-40">
+        <div class="card bg-primary-main px-20 py-20 rounded-8">
+            <div class="text-center">
+                <img src="./assets/images/product-card.webp" alt="KA$Hplus Visa Card For Your Transactions" width="412"
+                    height="348" class="inline-block">
+            </div>
+
+            <div class="mt-16">
+                <h2 class="text-xl font-700">KA$Hplus Visa Card For Your Transactions</h2>
+                <p class="text-neutral-80">KA$Hplus Visa Card will tackle your problem when do transcations. With
+                    KA$Hplus Visa Card you can do transactions more easy and fast</p>
+
+                <div class="flex flex-wrap row-gap-16 col-gap-20 mt-16">
+                    <a href="https://weborder.kashplus.my/?channel_id=kashplus_web_header"
+                        class="inline-block bg-secondary-main text-neutral-10 rounded-80 px-16 py-16 decoration-none font-600">Order
+                        KA$Hplus Visa Card</a>
+
+                    <a href="product.html#card"
+                        class="inline-block border-1-solid border-secondary-main text-secondary-main px-16 py-16 rounded-80 decoration-none font-600">Learn
+                        More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="app bg-secondary-main text-neutral-10 px-20 py-20 rounded-8">
+            <div class="text-center">
+                <img src="./assets/images/product-app.webp" alt="KA$Hplus App" width="348" height="330"
+                    class="inline-block">
+            </div>
+
+            <div class="mt-16">
+                <h2 class="text-xl font-700">KA$Hplus App</h2>
+                <p class="text-neutral-20">Pay, send money, receive money more easy with just one app. KA$Hplus app,
+                    help you to solve your payment problem. With secure and convenient app, say no more to difficult
+                    payment solutions</p>
+
+                <div class="flex flex-wrap row-gap-16 col-gap-20 mt-16">
+                    <a href="https://kashplus.my/appdownload/"
+                        class="download-app inline-block bg-primary-main text-neutral-100 rounded-80 px-16 py-16 decoration-none font-600 text-center">Download</a>
+
+                    <a href="product.html#card"
+                        class="inline-block border-1-solid border-primary-main text-primary-main px-16 py-16 rounded-80 decoration-none font-600">Learn
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END PRODUCT-->
+
+    <!-- START FEATURE -->
+    <section class="feature mt-80 px-40">
+        <h2 class="text-4xl font-700">KA$Hplus Help Your Needs</h2>
+        <p class="text-lg">Get To Know How KA$Hplus Solve Your Payment Problem</p>
+
+        <div class="list mt-16 flex flex-wrap col-gap-20 row-gap-16">
+            <div class="item">
+                <img src="./assets/images/icons/line.svg" alt="Line" width="112" height="4" class="line">
+
+                <img class="block mt-16" src="./assets/images/icons/rebates-icon.svg" alt="Icon" width="56" height="56">
+
+                <h3 class="text-lg font-700 mt-16">Rebates</h3>
+                <p class="mt-8 text-neutral-90">KA$Hplus rebates make shopping more fun. Get promotion and discount when
+                    pay with KA$Hplus</p>
+            </div>
+
+            <div class="item">
+                <img src="./assets/images/icons/line.svg" alt="Line" width="112" height="4" class="line">
+
+                <img class="block mt-16" src="./assets/images/icons/ewallet-icon.svg" alt="Icon" width="56" height="56">
+
+                <h3 class="text-lg font-700 mt-16">E-Wallet</h3>
+                <p class="mt-8 text-neutral-90">
+                    With just one E-Wallet, you can do everything you want.
+                    Pay coffee in coffee shop, pay vegetables in supermarket, buy bus ticket, or send money to beloved
+                    one
+
+                    <br />
+                    <br />
+
+                    With secure, fast, and reliable, KA$HPlus e-wallet will help you to tackle your payment problem
+                </p>
+            </div>
+
+            <div class="item">
+                <img src="./assets/images/icons/line.svg" alt="Line" width="112" height="4" class="line">
+
+                <img class="block mt-16" src="./assets/images/icons/transfer-icon.svg" alt="Icon" width="56"
+                    height="56">
+
+                <h3 class="text-lg font-700 mt-16">Fund Transfer</h3>
+                <p class="mt-8 text-neutral-90">
+                    Transfer to anyone everyday easy with fund transfer feature.
+
+                    <br />
+
+                    Transfer to your friends, family or anyone more easy with QR transfer. Just scan the QR Code, enter
+                    the amount and account number fast, easy and secure.
+                </p>
+            </div>
+
+            <div class="item">
+                <img src="./assets/images/icons/line.svg" alt="Line" width="112" height="4" class="line">
+
+                <img class="block mt-16" src="./assets/images/icons/vcc-icon.svg" alt="Icon" width="56" height="56">
+
+                <h3 class="text-lg font-700 mt-16">Virtual Credit Card</h3>
+                <p class="mt-8 text-neutral-90">
+                    The most secure card for your spending with no card numbers revealed. Fast and simple sign up
+                    process
+                </p>
+            </div>
+
+            <div class="item">
+                <img src="./assets/images/icons/line.svg" alt="Line" width="112" height="4" class="line">
+
+                <div class="mt-16 flex col-gap-20 items-center">
+                    <img src="./assets/images/great-eastern.webp" alt="Great Eastern" width="106" height="40">
+
+                    <img src="./assets/images/takaful-malaysia.webp" alt="Takaful Malaysia" width="122" height="40">
+                </div>
+
+                <h3 class="text-lg font-700 mt-16">Insurance</h3>
+                <p class="mt-8 text-neutral-90">
+                    Protect yourself and your beloved ones with KA$Hplus insurance.
+
+                    <br />
+                    <br />
+
+                    KA$Hplus with Great Eastern and Takaful Malaysia will protect you with personal accident insurance
+                    with protection up to RM50,000
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- END FEATURE -->
+
+    <!-- START APPLY -->
+    <section class="apply mt-80 px-40">
+        <h2 class="font-700 text-3xl">How To Apply</h2>
+
+        <div class="list flex flex-wrap col-gap-20 mt-16">
+            <div class="step flex flex-col row-gap-16">
+                <div class="item active px-20 py-20 rounded-8">
+                    <h3 class="text-xl font-700">1. Order Card</h3>
+                    <p class="mt-16">Order KA$Hplus Visa Card. We will send the card to your home. Free Delivery</p>
+
+                    <a href="https://weborder.kashplus.my/"
+                        class="button inline-block mt-16 px-16 py-16 bg-primary-main decoration-none text-neutral-100 font-600 rounded-80 text-center">Order
+                        Card</a>
+                </div>
+
+                <div class="item px-20 py-20 rounded-8">
+                    <h3 class="text-xl font-700">2. Download KA$Hplus App</h3>
+                    <p class="mt-16">Download KA$Hplus app on your device.</p>
+
+                    <div class="mt-16 flex flex-wrap col-gap-20 row-gap-16">
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.fasspay.biz.wallet.vfsb&hl=en_US&gl=US">
+                            <img src="./assets/images/play-store.webp" alt="Google Play Store" width="136" height="40">
+                        </a>
+
+                        <a href="https://apps.apple.com/us/app/kashplus/id1591333903">
+                            <img src="./assets/images/app-store.webp" alt="Apple Store" width="120" height="40">
+                        </a>
+
+                        <a href="https://appgallery.huawei.com/app/C105993177">
+                            <img src="./assets/images/huawei.webp" alt="Huawei" width="132" height="40">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="item px-20 py-20 rounded-8">
+                    <h3 class="text-xl font-700">3. Upgrade KA$Hplus to Premium</h3>
+                    <p class="mt-16">Make your KA$Hplus account premium</p>
+                </div>
+
+                <div class="item px-20 py-20 rounded-8">
+                    <h3 class="text-xl font-700">4. Receive and Activate Your Card</h3>
+                    <p class="mt-16">Receive your card and activate your card to start using KA$Hplus and enjoy easily,
+                        fast, and secure payment</p>
+                </div>
+            </div>
+
+            <div class="image">
+                <div class="item text-center">
+                    <img src="./assets/images/order-card.webp" alt="Order Card" width="336" height="679"
+                        class="inline-block">
+                </div>
+
+                <div class="item hidden text-center">
+                    <img src="./assets/images/download-app.webp" alt="Download App" width="336" height="679">
+                </div>
+
+                <div class="item hidden flex flex-wrap justify-center col-gap-20 row-gap-16">
+                    <img src="./assets/images/upgrade-1.webp" alt="Upgrade 1" width="300" height="612">
+
+                    <img src="./assets/images/upgrade-2.webp" alt="Upgrade 2" width="300" height="612">
+                </div>
+
+                <div class="item hidden flex flex-wrap justify-center col-gap-20 row-gap-16">
+                    <img src="./assets/images/activate-card-1.webp" alt="Activate 1" width="200" height="408">
+
+                    <img src="./assets/images/activate-card-2.webp" alt="Activate 2" width="200" height="408">
+
+                    <img src="./assets/images/activate-card-3.webp" alt="Activate 3" width="200" height="408">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END APPLY -->
+
+    <!-- START REQUIREMENT -->
+    <section class="requirement mt-16 px-40">
+        <h2 class="text-3xl font-700">Requirements</h2>
+
+        <div class="mt-16 flex flex-wrap col-gap-20 row-gap-16">
+            <div class="item flex col-gap-8">
+                <div class="number flex items-center justify-center bg-primary-main font-600">1</div>
+
+                <p>Age over 13 years old (With parent consent below 18 years old)</p>
+            </div>
+
+            <div class="item flex col-gap-8">
+                <div class="number flex items-center justify-center bg-primary-main font-600">2</div>
+
+                <p>MyKad verification for Malaysian. Passport or UNHCR card for foreigner</p>
+            </div>
+
+            <div class="item flex col-gap-8">
+                <div class="number flex items-center justify-center bg-primary-main font-600">3</div>
+
+                <p>Have mobile number and email</p>
+            </div>
+        </div>
+    </section>
+    <!-- END REQUIREMENT -->
+
+    <!-- START DOWNLOAD -->
+    <section class="download mt-80 px-40 text-neutral-10">
+        <div class="caption">
+            <h2 class="text-4xl font-700 text-primary-main">
+                Still Not Use KA$Hplus?
+                <br />
+                Download Now
+            </h2>
+
+            <p class="text-xl">Say Goodbye For Complicated Payment Method From Now</p>
+
+            <div class="mt-16 flex flex-wrap row-gap-16 col-gap-20">
+                <a href="https://play.google.com/store/apps/details?id=com.fasspay.biz.wallet.vfsb&hl=en_US&gl=US"
+                    class="inline-flex items-center col-gap-8 bg-primary-main font-600 text-lg px-20 py-16 rounded-80 decoration-none text-neutral-100">
+                    <img src="./assets/images/icons/play-store.svg" alt="Google Play Store" width="28" height="28">
+
+                    Play Store
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=com.fasspay.biz.wallet.vfsb&hl=en_US&gl=US"
+                    class="inline-flex items-center col-gap-8 bg-primary-main font-600 text-lg px-20 py-16 rounded-80 decoration-none text-neutral-100">
+                    <img src="./assets/images/icons/app-store.svg" alt="Apple App Store" width="28" height="28">
+
+                    App Store
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=com.fasspay.biz.wallet.vfsb&hl=en_US&gl=US"
+                    class="inline-flex items-center col-gap-8 bg-primary-main font-600 text-lg px-20 py-16 rounded-80 decoration-none text-neutral-100">
+                    <img src="./assets/images/icons/huawei.svg" alt="Huawei" width="28" height="28">
+
+                    Huawei
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END DOWNLOAD -->
+
+    <!-- START PARTNER -->
+    <section class="partner mt-80 px-40">
+        <h2 class="text-3xl font-700 text-center">Our Partner</h2>
+
+        <div class="mt-16 flex flex-wrap justify-center col-gap-20 row-gap-16">
+            <img src="./assets/images/visa.webp" alt="Visa" width="124" height="40">
+
+            <img src="./assets/images/fasspay.webp" alt="Fasspay" width="156" height="40">
+
+            <img src="./assets/images/great-eastern.webp" alt="Great Eastern" width="106" height="40">
+
+            <img src="./assets/images/takaful-malaysia.webp" alt="Takaful Malaysia" width="123" height="40">
+        </div>
+
+        <div class="mt-20 flex flex-wrap justify-center col-gap-20 row-gap-16">
+            <img src="./assets/images/alliance-bank.webp" alt="Alliance Bank" width="238" height="40">
+
+            <img src="./assets/images/bus-online-ticket.webp" alt="Bus Online Ticket.com" width="330" height="40">
+
+            <img src="./assets/images/lulu-money.webp" alt="Lulu Money" width="110" height="40">
+
+            <img src="./assets/images/tml.webp" alt="TML" width="25" height="40">
+        </div>
+    </section>
+    <!-- END PARTNER -->
+
+    <!-- START FOOTER -->
+    <footer class="mt-80 bg-secondary-main px-40 py-40 text-neutral-10">
+        <div class="list flex flex-wrap col-gap-20 row-gap-16">
+            <div class="item">
+                <a href="index.html">
+                    <img src="./assets/images/logo-gold.webp" alt="KA$Hplus Logo" width="95" height="25">
+                </a>
+
+                <div class="mt-16 flex col-gap-20">
+                    <a href="https://www.facebook.com/kashplusmyofficial" aria-label="Facebook">
+                        <img src="./assets/images/icons/facebook-gold.svg" alt="Facebook" width="24" height="24">
+                    </a>
+
+                    <a href="https://www.instagram.com/kashplus.my/" aria-label="Instagram">
+                        <img src="./assets/images/icons/ig-gold.svg" alt="Instagram" width="24" height="24">
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UC6cmbsnDnoXpuXkqfDrKEjg" aria-label="Youtube">
+                        <img src="./assets/images/icons/youtube-gold.svg" alt="Youtube" width="24" height="24">
+                    </a>
+                </div>
+
+                <p class="mt-8">
+                    Mon-Fri
+                    <br />
+                    (Weekend & Public Holiday Close)
+                    <br />
+                    09:00 AM - 05:00 PM
+                </p>
+                <div class="flex items-center col-gap-8 mt-8">
+                    <img src="./assets/images/icons/phone-icon.svg" alt="Phone" width="24" height="24">
+
+                    <a href="tel:+60384082118" class="decoration-none text-neutral-10">+60384082118</a>
+                </div>
+
+                <div class="flex items-center col-gap-8 mt-8">
+                    <img src="./assets/images/icons/email.svg" alt="Phone" width="24" height="24">
+
+                    <a href="mailto:pluscare@kash.my" class="decoration-none text-neutral-10">pluscare@kash.my</a>
+                </div>
+
+            </div>
+
+            <div class="item">
+                <p class="font-700">Company</p>
+
+                <div class="mt-12 flex flex-col row-gap-12">
+                    <a href="about-us.html">About</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms and Conditions</a>
+                    <a href="./assets/files/PDPN-BNM.pdf">Personal Data Protection Notice</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <p class="font-700">Product</p>
+
+                <div class="mt-12 flex flex-col row-gap-12">
+                    <a href="product.html#card">KA$Hplus Visa Card</a>
+                    <a href="product.html#app">KA$Hplus App</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <p class="font-700">Support</p>
+
+                <div class="mt-12 flex flex-col row-gap-12">
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="guide.html#register">Registration Guide</a>
+                    <a href="guide.html#feature">Feature & Function Guide</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <p class="font-700">Download KA$Hplus</p>
+
+                <div class="mt-12 flex flex-col row-gap-12">
+                    <a href="https://play.google.com/store/apps/details?id=com.fasspay.biz.wallet.vfsb&hl=en_US&gl=US">
+                        <img src="./assets/images/play-store.webp" alt="Google Play Store" width="130" height="40">
+                    </a>
+
+                    <a href="https://apps.apple.com/us/app/kashplus/id1591333903">
+                        <img src="./assets/images/app-store.webp" alt="Apple App Store" width="118" height="40">
+                    </a>
+
+                    <a href="https://appgallery.huawei.com/app/C105993177">
+                        <img src="./assets/images/huawei.webp" alt="Huawei" width="130" height="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-sm text-center mt-20">All rights reserved Virtualflex Sdn Bhd 2023</p>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script src="./assets/js/swiper-js.js"></script>
+    <script>
+        // SHOW HIDE MENU
+        document.querySelector('.menu').addEventListener('click', function () {
+            let navMenu = document.querySelector('nav ul');
+
+            navMenu.classList.contains('show') ? navMenu.classList.remove('show') : navMenu.classList.add('show');
+        });
+
+        // CAROUSEL
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const applyItem = document.querySelectorAll('.apply .step .item');
+        const applyImage = document.querySelectorAll('.apply .image .item');
+
+        applyItem.forEach((element, index) => {
+            element.addEventListener('click', function () {
+                applyItem.forEach(el => {
+                    el.classList.remove('active');
+                });
+
+                applyImage.forEach(image => { image.classList.add('hidden') });
+
+
+                element.classList.add('active');
+                applyImage[index].classList.remove('hidden');
+            })
+        });
+    </script>
 </body>
+
 </html>
