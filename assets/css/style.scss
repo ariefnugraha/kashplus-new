@@ -1,5 +1,73 @@
 @use './typography';
+@use './layout';
+@use './colors';
 
 body {
     margin: 0;
+    font-family: "Jakarta Sans Regular";
+    color: colors.$neutral-100;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+nav {
+    .order-card {
+        width: 160px;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+footer {
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .list {
+        .item {
+            width: calc(20% - 20px);       
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        position: relative;
+        ul {
+            &.flex.show {
+                display: flex;
+            }
+
+            &.flex {
+                display: none;
+            }
+            position: absolute;
+            top: 88px;
+            left: 0;
+            right: 0;
+            background: colors.$neutral-10;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .menu {
+            display: block;
+        }
+    }
+
+    footer {
+        .list  .item {
+            width: 100%;
+        }
+    }
 }

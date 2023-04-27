@@ -12,3 +12,62 @@
     font-family: "Jakarta Sans Regular";
     src: url("../fonts/PlusJakartaSans-Regular.ttf");
 }
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+} 
+
+
+// TEXT DECORATION
+.decoration-none {
+    text-decoration: none;
+}
+
+.decoration-underline {
+    text-decoration: underline;
+}
+
+// FONT WEIGHT
+.font-400 {
+    font-weight: 400;
+    font-family: "Jakarta Sans Regular";
+}
+
+.font-600 {
+    font-family: "Jakarta Sans Semibold";
+    font-weight: 600;
+}
+
+.font-700 {
+    font-family: "Jakarta Sans Bold";
+    font-weight: 700;
+}
+
+// FONT SIZE
+.text-4xl {
+    font-size: 40px;
+}
+
+.text-3xl {
+    font-size: 32px;
+}
+
+.text-xl {
+    font-size: 28px;
+}
+
+.text-lg {
+    font-size: 20px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+// TEXT ALIGN
+.text-center {
+    text-align: center;
+}
