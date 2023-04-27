@@ -1,0 +1,165 @@
+// DISPLAY
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+// FLEX WRAP
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+// FLEX DIRECTION
+.flex-col {
+    flex-direction: column;
+}
+
+// ALIGN ITEMS
+.items-center {
+    align-items: center;
+}
+
+// JUSTIFY CONTENT
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+// MARGIN
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+// PADDING
+.px-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.px-40 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.px-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+// BORDER RADIUS
+.rounded-80 {
+    border-radius: 80px;
+}
+
+.rounded-8 {
+    border-radius: 8px;
+}
+
+// UNORDER LIST 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+// GAP
+.col-gap-20 {
+    column-gap: 20px;
+}
+
+.col-gap-8 {
+    column-gap: 8px;
+}
+
+.row-gap-16 {
+    row-gap: 16px;
+}
+
+.row-gap-12 {
+    row-gap: 12px;
+}
+
+// BORDER
+.border-1-solid {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-2-solid {
+    border-width: 2px;
+    border-style: solid;
+}
+
+// WIDTH
+.w-1000 {
+    width: 1000px;
+}
+
+@media (max-width: 992px) {
+    .mt-80 {
+        margin-top: 40px;
+    }
+
+    .px-40 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

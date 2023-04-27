@@ -1,0 +1,61 @@
+$primary-main: #E8C95E;
+$primary-surface: #FAF4DF;
+$secondary-main: #1A2837;
+$secondary-surface: #D1D4D7;
+$neutral-10: #FFFFFF;
+$neutral-100: #121212;
+
+// BACKGROUND
+.bg-primary-main {
+    background: $primary-main;
+}
+
+.bg-primary-surface {
+    background: $primary-surface;
+}
+
+.bg-secondary-main {
+    background: $secondary-main;
+}
+
+.bg-secondary-surface {
+    background: $secondary-surface;
+}
+
+// TEXT COLOR
+.text-primary-main {
+    color: $primary-main;
+}
+.text-secondary-main {
+    color: $secondary-main;
+}
+.text-neutral-100 {
+    color: $neutral-100;
+}
+
+.text-neutral-90 {
+    color: #313131;
+}
+
+.text-neutral-80 {
+    color: #444444;
+}
+
+.text-neutral-20 {
+    color: #DFDFDF;
+}
+
+.text-neutral-10 {
+    color: $neutral-10;
+}
+
+// BORDER COLOR
+.border-primary-main {
+    border-color: $primary-main;
+}
+.border-secondary-main {
+    border-color: $secondary-main;
+}
+.border-primary-surface {
+    border-color: $primary-surface;
+}

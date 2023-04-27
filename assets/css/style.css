@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "Jakarta Sans Bold";
+  src: url("../fonts/PlusJakartaSans-Bold.ttf");
+}
+@font-face {
+  font-family: "Jakarta Sans Semibold";
+  src: url("../fonts/PlusJakartaSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Jakarta Sans Regular";
+  src: url("../fonts/PlusJakartaSans-Regular.ttf");
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.decoration-underline {
+  text-decoration: underline;
+}
+
+.font-400 {
+  font-weight: 400;
+  font-family: "Jakarta Sans Regular";
+}
+
+.font-600 {
+  font-family: "Jakarta Sans Semibold";
+  font-weight: 600;
+}
+
+.font-700 {
+  font-family: "Jakarta Sans Bold";
+  font-weight: 700;
+}
+
+.text-5x {
+  font-size: 56px;
+  line-height: 120%;
+}
+
+.text-4xl {
+  font-size: 40px;
+  line-height: 120%;
+}
+
+.text-3xl {
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.text-2xl {
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.text-xl {
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.text-lg {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.text-sm {
+  font-size: 14px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.rounded-80 {
+  border-radius: 80px;
+}
+
+.rounded-8 {
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.col-gap-20 {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.col-gap-8 {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+
+.row-gap-16 {
+  row-gap: 16px;
+}
+
+.row-gap-12 {
+  row-gap: 12px;
+}
+
+.border-1-solid {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-2-solid {
+  border-width: 2px;
+  border-style: solid;
+}
+
+.w-1000 {
+  width: 1000px;
+}
+
+@media (max-width: 992px) {
+  .mt-80 {
+    margin-top: 40px;
+  }
+  .px-40 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.bg-primary-main {
+  background: #E8C95E;
+}
+
+.bg-primary-surface {
+  background: #FAF4DF;
+}
+
+.bg-secondary-main {
+  background: #1A2837;
+}
+
+.bg-secondary-surface {
+  background: #D1D4D7;
+}
+
+.text-primary-main {
+  color: #E8C95E;
+}
+
+.text-secondary-main {
+  color: #1A2837;
+}
+
+.text-neutral-100 {
+  color: #121212;
+}
+
+.text-neutral-90 {
+  color: #313131;
+}
+
+.text-neutral-80 {
+  color: #444444;
+}
+
+.text-neutral-20 {
+  color: #DFDFDF;
+}
+
+.text-neutral-10 {
+  color: #FFFFFF;
+}
+
+.border-primary-main {
+  border-color: #E8C95E;
+}
+
+.border-secondary-main {
+  border-color: #1A2837;
+}
+
+.border-primary-surface {
+  border-color: #FAF4DF;
+}
+
+body {
+  margin: 0;
+  font-family: "Jakarta Sans Regular";
+  color: #121212;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+nav {
+  border-bottom: solid 1px #D1D4D7;
+}
+nav .order-card {
+  width: 160px;
+}
+nav .menu {
+  display: none;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .list .item {
+  width: calc(20% - 20px);
+}
+
+@media (max-width: 992px) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    flex-direction: column;
+    padding: 20px;
+  }
+  nav ul.flex.show {
+    display: flex;
+  }
+  nav ul.flex {
+    display: none;
+  }
+  nav .menu {
+    display: block;
+  }
+  footer .list .item {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
