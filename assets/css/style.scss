@@ -24,6 +24,47 @@ nav {
     }
 }
 
+.accordion {
+    &.show {
+        .accordion-header img {
+            transform: rotate(0deg);
+        }
+        .accordion-body {
+            height: auto;
+            overflow: auto;
+            padding-bottom: 16px;
+        }
+    }
+
+    .accordion-header {
+        background: colors.$primary-main;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: colors.$primary-main;
+        border-radius: 8px;
+        padding: 16px 20px;
+        cursor: pointer;
+
+        img {
+            transform: rotate(180deg);
+        }
+    }
+
+    .accordion-body {
+        height: 0;
+        overflow: hidden;
+        margin-top: 16px;
+        padding: 0 20px 0px 20px;
+        border-bottom: solid 1px colors.$primary-main;
+
+        ul {
+            list-style-type: disc;
+        }
+
+    }
+}
+
 footer {
     a {
         color: #fff;
