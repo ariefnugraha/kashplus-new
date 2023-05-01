@@ -1,16 +1,19 @@
 @font-face {
     font-family: 'Jakarta Sans Bold';
-    src: url('../fonts/PlusJakartaSans-Bold.ttf');
+    src: url('../fonts/PlusJakartaSans-Bold.woff2');
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Jakarta Sans Semibold";
-    src: url("../fonts/PlusJakartaSans-SemiBold.ttf");
+    src: url("../fonts/PlusJakartaSans-SemiBold.woff2");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Jakarta Sans Regular";
-    src: url("../fonts/PlusJakartaSans-Regular.ttf");
+    src: url("../fonts/PlusJakartaSans-Regular.woff2");
+    font-display: swap;
 }
 
 h1,
@@ -30,19 +33,23 @@ p {
     text-decoration: underline;
 }
 
+.hover-underline:hover {
+    text-decoration: underline;
+}
+
 // FONT WEIGHT
 .font-400 {
     font-weight: 400;
-    font-family: "Jakarta Sans Regular";
+    font-family: "Jakarta Sans Regular", sans-serif;
 }
 
 .font-600 {
-    font-family: "Jakarta Sans Semibold";
+    font-family: "Jakarta Sans Semibold", sans-serif;
     font-weight: 600;
 }
 
 .font-700 {
-    font-family: "Jakarta Sans Bold";
+    font-family: "Jakarta Sans Bold", sans-serif;
     font-weight: 700;
 }
 
@@ -77,6 +84,11 @@ p {
     line-height: 140%;
 }
 
+.text-base {
+    font-size: 16px;
+    line-height: 140%;
+}
+
 .text-sm {
     font-size: 14px;
 }
@@ -84,4 +96,8 @@ p {
 // TEXT ALIGN
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
