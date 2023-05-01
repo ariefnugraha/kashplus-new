@@ -4,71 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KA$Hplus Product include KA$Hplus app and KA$Hplus Visa Prepaid Card. This page explain the short information about two product and the benefit. There's also information about account type">
+    <meta name="theme-color" content="#E8C95E">
+    <meta property="og:title" content="KA$Hplus Product">
+    <meta property="og:type" content="website">
+    <meta property="og:image:url" content="./assets/images/kashplus-social.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="KA$Hplus Product">
     <title>Product</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
     <style>
-        .product .hero .caption,
-        .product .hero .image {
-            width: calc(50% - 10px);
-        }
-
-        .product .hero .image img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .product .benefit .list .item {
-            width: calc(20% - 56px);
-        }
-
-        #card .account .caption {
-            width: 30%;
-        }
-
-        #card .account .type {
-            width: calc(70% - 20px);
-        }
-
-        #card .account .type .item {
-            width: calc(33.3% - 56px);
-            border-radius: 40px;
-        }
-
-        #app.product .benefit .list .item {
-            width: calc(25% - 56px);
-        }
-
-        @media (max-width: 992px) {
-            #card .account .caption,
-            #card .account .type {
-                width: 100%;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 992px) {
-            .product .benefit .list .item,
-            #app.product .benefit .list .item {
-                width: calc(50% - 50px);
-            }
-        }
-
-        @media (max-width: 767px) {
-            .product .hero .caption, 
-            .product .hero .image,
-            .product .benefit .list .item,
-            #card .account .type .item,
-            #app.product .benefit .list .item {
-                width: 100%;
-            }
-
-            .product .hero .image {
-                order: 1;
-            }
-
-            .product .hero .caption {
-                order: 2;
-            }
-        }
+        .product .hero .caption,.product .hero .image{width:calc(50% - 10px)}.product .hero .image img{width:100%;height:100%}.product .benefit .list .item{width:calc(20% - 16px)}#card .account .caption{width:30%}#card .account .type{width:calc(70% - 20px)}#card .account .type .item{width:calc(33.3% - 14px);border-radius:40px}#app.product .benefit .list .item{width:calc(25% - 15px)}@media (max-width:992px){#card .account .caption,#card .account .type{width:100%}}@media (min-width:768px) and (max-width:992px){#app.product .benefit .list .item,.product .benefit .list .item{width:calc(50% - 50px)}}@media (max-width:767px){#app.product .benefit .list .item,#card .account .type .item,.product .benefit .list .item,.product .hero .caption,.product .hero .image{width:100%}.product .hero .image{order:1}.product .hero .caption{order:2}}
     </style>
 </head>
 <body>
@@ -557,5 +508,26 @@
         <p class="text-sm text-center mt-20">All rights reserved Virtualflex Sdn Bhd 2023</p>
     </footer>
     <!-- END FOOTER -->
+
+    <script>
+        // SHOW HIDE MENU
+        document.querySelector('.menu').addEventListener('click', function () {
+            let navMenu = document.querySelector('nav ul');
+
+            navMenu.classList.contains('show') ? navMenu.classList.remove('show') : navMenu.classList.add('show');
+        });
+    </script>
+
+    <!-- Hotjar Tracking Code for kashplus -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3472503, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </body>
 </html>
