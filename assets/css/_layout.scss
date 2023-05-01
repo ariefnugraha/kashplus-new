@@ -1,3 +1,10 @@
+@use './colors';
+@use './typography';
+
+* {
+    box-sizing: border-box;
+}
+
 // DISPLAY
 .flex {
     display: flex;
@@ -46,6 +53,10 @@
 // MARGIN
 .mt-80 {
     margin-top: 80px;
+}
+
+.mt-40 {
+    margin-top: 40px;
 }
 
 .mt-20 {
@@ -117,7 +128,6 @@
 ul {
     list-style: none;
     margin: 0;
-    padding: 0;
 }
 
 // GAP
@@ -137,6 +147,10 @@ ul {
     row-gap: 12px;
 }
 
+.row-gap-8 {
+    row-gap: 8px;
+}
+
 // BORDER
 .border-1-solid {
     border-width: 1px;
@@ -151,7 +165,38 @@ ul {
 // WIDTH
 .w-1000 {
     width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+// INPUT
+input[type="text"],
+select {
+    width: 100%;
+    display: block;
+    border: none;
+    padding-bottom: 12px;
+    border-bottom: solid 1px colors.$neutral-10;
+    background: transparent;
+    outline: none;
+    font-family: "Jakarta Sans Regular";
+    margin-top: 8px;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    border: solid 1px colors.$neutral-10;
+    outline: none;
+    font-family: "Jakarta Sans Regular";
+    background: transparent;
+    resize: vertical;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+
 
 @media (max-width: 992px) {
     .mt-80 {
@@ -161,5 +206,9 @@ ul {
     .px-40 {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .w-1000 {
+        width: 100%;
     }
 }
