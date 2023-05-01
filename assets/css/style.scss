@@ -15,6 +15,7 @@ button {
 
 nav {
     border-bottom: solid 1px colors.$secondary-surface;
+    z-index: 9999;
     .order-card {
         width: 160px;
     }
@@ -62,6 +63,48 @@ nav {
             list-style-type: disc;
         }
 
+    }
+}
+
+.tab button {
+    padding: 16px;
+    border-radius: 80px;
+    border: solid 1px colors.$primary-main;
+
+    &.active {
+        background: colors.$primary-main;
+        font-weight: 600;
+    }
+}
+
+.tab-container {
+    .tab-content {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead tr {background: colors.$primary-main;}
+
+    tbody tr {
+        &:nth-child(even) {
+            background: colors.$primary-main;
+        }
+
+        &:nth-child(odd) {
+            background: colors.$primary-surface;
+        }
+    }
+
+    th, td {
+        padding: 8px 20px;
     }
 }
 
