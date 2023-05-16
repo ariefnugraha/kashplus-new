@@ -1661,7 +1661,7 @@
 
     <script>
         document.querySelectorAll('.accordion').forEach(element => {
-            element.addEventListener('click', function () {
+            element.querySelector('.accordion-header').addEventListener('click', function () {
                 element.classList.contains('show') ? element.classList.remove('show') : element.classList.add('show');
             })
         });
